@@ -1,0 +1,29 @@
+import math
+
+layer_outputs = [4.8, 1.21, 2.385]
+# layer_outputs = [4.8, 4.79, 4.25]
+
+# E = 2.718281828459045
+E = math.e
+
+exp_values = []
+
+for output in layer_outputs:
+    exp_values.append(E**output)
+
+print(exp_values)
+
+
+
+# Taking each neuron value and dividing by the number of neurons in that layer to get a more accurate 1 or zero
+# Relu converts or negative values to 0 - zero
+
+# Exponential function solves negative values - Euler's number
+# y == e^x
+# e == 2.718281828459045
+#Examples1
+# x == -10.00000
+# y == e^-10.00000 == +0.00005
+# Example2
+# x == -6.17902
+# y == e^-6.17902 == +0.00207
